@@ -1,0 +1,12 @@
+This program was originally made by Fábio Pereira - fpereira2006@gmail.com - and it's licenced under GPL v3 version.
+
+It's purpose is to split binary files in several TXT files, so you can send them by protocols that alow only text, as email for example. You can use the same program to rebuild the original bin file from the TXT files available in a directory.
+
+It's very simple and, as it's a simple java class, you can send the program itself by email and as long as you have a JVM installed on your target system you will be able to re-join the files.
+
+How to use: 
+	To Split a bin file in several TXT files:
+	java JavaZipSplitter -sizeinbytes=2621440 -split -bin /path/filename.zip
+	
+	To join TXT files in an origin folder into a bin file:
+	java JavaZipSplitter -sizeinbytes=2621440 -join -origin /path/
